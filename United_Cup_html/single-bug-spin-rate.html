@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis GFX - United Cup</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Chillax-Bold';
+            src: url("./fonts/Chillax-Bold.otf") format("opentype");
+        }
+        @font-face {
+            font-family: 'Chillax-Medium';
+            src: url("./fonts/Chillax-Medium.otf") format("opentype");
+        }
+        @font-face {
+            font-family: 'Chillax-Regular';
+            src: url("./fonts/Chillax-Regular.otf") format("opentype");
+        }
+
+        html {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Chillax-Medium';
+            font-size: 14px;
+            font-weight: 400;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .placeholder {
+            width: 1920px;
+            height: 1080px;
+            padding: 0px;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .outer-container {
+            position: fixed;
+            bottom: 2%;
+            left: 83%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title {
+            position: absolute;
+            top: 15.5px;
+            left: 50%;
+            width: 400px;
+            transform: translate(-50%, 0%);
+            color: #fff;
+            z-index: 2;
+            font-family: 'Chillax-Medium';
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .bold {
+            font-family: 'Chillax-Bold';
+        }
+
+    </style>
+    
+    <div class="placeholder">
+        <div class="outer-container">
+            <div style="position: relative; z-index: 1;">
+                <img src="images/singleBug.png" alt="">
+                <span class="title">SPIN RATE: <span class="bold">XXXX RPM</span></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
