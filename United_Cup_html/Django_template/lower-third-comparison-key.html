@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +20,15 @@
 
         @font-face {
             font-family: 'Chillax-Bold';
-            src: url("./fonts/Chillax-Bold.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Bold.otf' %}") format("opentype");
         }
         @font-face {
             font-family: 'Chillax-Medium';
-            src: url("./fonts/Chillax-Medium.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Medium.otf' %}") format("opentype");
         }
         @font-face {
             font-family: 'Chillax-Regular';
-            src: url("./fonts/Chillax-Regular.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Regular.otf' %}") format("opentype");
         }
 
         html {
@@ -81,12 +82,8 @@
             height: 80%;
         }
 
-        .title-div {
-
-        }
-
         .title {
-            background-image: url("images/lower-third-comparison-header.png");
+            background-image: url("{% static '/images/lower-third-comparison-header.png' %}");
             width: 350px;
             position: absolute;
             top: 0px;
@@ -161,77 +158,116 @@
         .player-box {
             text-align: left;
             display: block;
-            float: left !important;
         }
 
     </style>
     
     <div class="placeholder">
         <div class="outer-container">
-            <img class="container-base" src="images/lower-third-comparison-base.png">
+            <img class="container-base" src="{% static '/images/lower-third-comparison-base.png' %}">
             <div class="inner-container">
-                <div class="title-div">
-                    <span class="title">POINTS WON BY SHOTS</span>
-                </div>
+                <span class="title">{{ title }}</span>
                 <div class="title-row">
                     <div class="score-col">
-                        <span class="score-box">UNDER 5</span>
-                        <span class="score-box">5-9</span>
-                        <span class="score-box">OVER 9</span>
+                        {% if c1 %} 
+                            <span class="score-box">{{ c1 }}</span>
+                        {% endif %}
+                        {% if c2 %} 
+                            <span class="score-box">{{ c2 }}</span>
+                        {% endif %}
+                        {% if c3 %} 
+                            <span class="score-box">{{ c3 }}</span>
+                        {% endif %}
                     </div>
                 </div>
+
+                {% if r1 %} 
                 <div class="player-row">
                     <div class="player-col">
-                        <span class="player-box">PLAYER ONE</span>
+                        <span class="player-box">{{ r1 }}</span>
                     </div>
                     <div class="score-col">
-                        <span class="score-box">10</span>
-                        <span class="score-box">9</span>
-                        <span class="score-box">8</span>
+                        {% if r1c1 %} 
+                            <span class="score-box">{{ r1c1 }}</span>
+                        {% endif %}
+                        {% if r1c2 %} 
+                            <span class="score-box">{{ r1c2 }}</span>
+                        {% endif %}
+                        {% if r1c3 %} 
+                            <span class="score-box">{{ r1c3 }}</span>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="hr-row">
-                    <img src="images/lower-third-comparison-hr.png">
+                    <img src="{% static '/images/lower-third-comparison-hr.png' %}">
                 </div>
+                {% endif %}
+
+                {% if r2 %} 
                 <div class="player-row">
                     <div class="player-col">
-                        <span class="player-box">PLAYER TWO</span>
+                        <span class="player-box">{{ r2 }}</span>
                     </div>
                     <div class="score-col">
-                        <span class="score-box">10</span>
-                        <span class="score-box">9</span>
-                        <span class="score-box">8</span>
+                        {% if r2c1 %} 
+                            <span class="score-box">{{ r2c1 }}</span>
+                        {% endif %}
+                        {% if r2c2 %} 
+                            <span class="score-box">{{ r2c2 }}</span>
+                        {% endif %}
+                        {% if r2c3 %} 
+                            <span class="score-box">{{ r2c3 }}</span>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="hr-row">
-                    <img src="images/lower-third-comparison-hr.png">
+                    <img src="{% static '/images/lower-third-comparison-hr.png' %}">
                 </div>
+                {% endif %}
+
+                {% if r3 %} 
                 <div class="player-row">
                     <div class="player-col">
-                        <span class="player-box">PLAYER THREE</span>
+                        <span class="player-box">{{ r3 }}</span>
                     </div>
                     <div class="score-col">
-                        <span class="score-box">10</span>
-                        <span class="score-box">9</span>
-                        <span class="score-box">8</span>
+                        {% if r3c1 %} 
+                            <span class="score-box">{{ r3c1 }}</span>
+                        {% endif %}
+                        {% if r3c2 %} 
+                            <span class="score-box">{{ r3c2 }}</span>
+                        {% endif %}
+                        {% if r3c3 %} 
+                            <span class="score-box">{{ r3c3 }}</span>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="hr-row">
-                    <img src="images/lower-third-comparison-hr.png">
+                    <img src="{% static '/images/lower-third-comparison-hr.png' %}">
                 </div>
+                {% endif %}
+
+                {% if r4 %} 
                 <div class="player-row">
                     <div class="player-col">
-                        <span class="player-box">PLAYER FOUR</span>
+                        <span class="player-box">{{ r4 }}</span>
                     </div>
                     <div class="score-col">
-                        <span class="score-box">10</span>
-                        <span class="score-box">9</span>
-                        <span class="score-box">8</span>
+                        {% if r4c1 %} 
+                            <span class="score-box">{{ r4c1 }}</span>
+                        {% endif %}
+                        {% if r4c2 %} 
+                            <span class="score-box">{{ r4c2 }}</span>
+                        {% endif %}
+                        {% if r4c3 %} 
+                            <span class="score-box">{{ r4c3 }}</span>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="hr-row">
-                    <img src="images/lower-third-comparison-hr.png">
+                    <img src="{% static '/images/lower-third-comparison-hr.png' %}">
                 </div>
+                {% endif %}
 
             </div>
         </div>

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +20,15 @@
 
         @font-face {
             font-family: 'Chillax-Bold';
-            src: url("./fonts/Chillax-Bold.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Bold.otf' %}") format("opentype");
         }
         @font-face {
             font-family: 'Chillax-Medium';
-            src: url("./fonts/Chillax-Medium.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Medium.otf' %}") format("opentype");
         }
         @font-face {
             font-family: 'Chillax-Regular';
-            src: url("./fonts/Chillax-Regular.otf") format("opentype");
+            src: url("{% static '/fonts/Chillax-Regular.otf' %}") format("opentype");
         }
 
         html {
@@ -85,8 +86,8 @@
     <div class="placeholder">
         <div class="outer-container">
             <div style="position: relative; z-index: 1;">
-                <img src="images/singleBug.png" alt="">
-                <span class="title">GAME TIME: <span class="bold">100 MINUTES</span></span>
+                <img src="{% static '/images/singleBug.png' %}" alt="">
+                <span class="title">{{ title }}: <span class="bold">{{ info }}</span></span>
             </div>
         </div>
     </div>
