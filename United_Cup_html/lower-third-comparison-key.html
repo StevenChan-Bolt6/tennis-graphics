@@ -60,10 +60,34 @@
             position: fixed;
             bottom: 2%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50px);
+
+        }
+
+        .inner-container {
+            position: relative; 
+            z-index: 1;
+            background-color: #051224;
+            border-radius: 5px;
+            width: 900px;
+        }
+
+        .container-base {
+            position: absolute; 
+            bottom: -9px;
+            left: -9px;
+            border-radius: 5px;
+            width: 918px;
+            height: 80%;
+        }
+
+        .title-div {
+
         }
 
         .title {
+            background-image: url("images/lower-third-comparison-header.png");
+            width: 350px;
             position: absolute;
             top: 0px;
             left: 50%;
@@ -72,14 +96,12 @@
             z-index: 2;
             font-family: 'Chillax-Medium';
             font-size: 18px;
+            text-align: center;
+            border-radius: 5px;
         }
 
         .title-row {
-            position: absolute;
-            top: 0px;
-            left: 50%;
             width: 100%;
-            transform: translate(-50%, 0%);
             color: #fff;
             z-index: 2;
             font-family: 'Chillax-Medium';
@@ -91,10 +113,7 @@
         }
 
         .player-row {
-            position: absolute;
-            left: 50%;
             width: 100%;
-            transform: translate(-50%, 0%);
             color: #fff;
             z-index: 2;
             font-family: 'Chillax-Bold';
@@ -104,6 +123,20 @@
             justify-content: safe right;
             padding-left: 40px;
             padding-right: 40px;
+        }
+
+        .hr-row {
+            width: 100%;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 0px;
+        }
+
+        .hr-row > img {
+            position: relative;
+            top: -35px;
+            width: 100%;
         }
 
         .score-box {
@@ -122,26 +155,53 @@
     
     <div class="placeholder">
         <div class="outer-container">
-            <div style="position: relative; z-index: 1;">
-                <img src="images/statBoard.png" alt="">
-                <span class="title">POINTS WON BY SHOTS</span>
+            <img class="container-base" src="images/lower-third-comparison-base.png">
+            <div class="inner-container">
+                <div class="title-div">
+                    <span class="title">POINTS WON BY SHOTS</span>
+                </div>
                 <div class="title-row">
                     <span class="score-box">UNDER 5</span>
                     <span class="score-box">5-9</span>
                     <span class="score-box">OVER 9</span>
                 </div>
-                <div class="player-row" style="top: 28px;">
+                <div class="player-row">
                     <span class="player-box">PLAYER ONE</span>
                     <span class="score-box">10</span>
                     <span class="score-box">9</span>
                     <span class="score-box">8</span>
                 </div>
-                <div class="player-row" style="top: 62px;">
+                <div class="hr-row">
+                    <img src="images/lower-third-comparison-hr.png">
+                </div>
+                <div class="player-row">
                     <span class="player-box">PLAYER TWO</span>
                     <span class="score-box">10</span>
                     <span class="score-box">9</span>
                     <span class="score-box">8</span>
                 </div>
+                <div class="hr-row">
+                    <img src="images/lower-third-comparison-hr.png">
+                </div>
+                <div class="player-row">
+                    <span class="player-box">PLAYER THREE</span>
+                    <span class="score-box">10</span>
+                    <span class="score-box">9</span>
+                    <span class="score-box">8</span>
+                </div>
+                <div class="hr-row">
+                    <img src="images/lower-third-comparison-hr.png">
+                </div>
+                <div class="player-row">
+                    <span class="player-box">PLAYER FOUR</span>
+                    <span class="score-box">10</span>
+                    <span class="score-box">9</span>
+                    <span class="score-box">8</span>
+                </div>
+                <div class="hr-row">
+                    <img src="images/lower-third-comparison-hr.png">
+                </div>
+
             </div>
         </div>
     </div>
