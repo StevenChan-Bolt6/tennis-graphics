@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis GFX - Adelaide-Brisbane-Tour</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+       @font-face {
+            font-family: 'sharp-sans-bold';
+            src: url("{% static '/fonts/sharp-sans-bold.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'sharp-sans-medium';
+            src: url("{% static '/fonts/sharp-sans-medium.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'sharp-sans-regular';
+            src: url("{% static '/fonts/sharp-sans-regular.otf' %}") format("opentype");
+        }
+
+        .bold {
+            font-family: 'sharp-sans-bold';
+        }
+
+        .medium {
+            font-family: 'sharp-sans-medium';
+        }
+
+        .regular {
+            font-family: 'sharp-sans-regular';
+        }
+
+        html {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'sharp-sans-medium';
+            font-size: 14px;
+            font-weight: 400;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .placeholder {
+            width: 1920px;
+            height: 1080px;
+            padding: 0px;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .outer-container {
+            position: fixed;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title {
+            position: absolute;
+            top: 26.5px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            color: #fff;
+            z-index: 2;
+            font-family: 'sharp-sans-bold';
+            font-size: 30px;
+        }
+
+
+    </style>
+    
+    <div class="placeholder">
+        <div class="outer-container">
+            <div style="position: relative; z-index: 1;">
+                <img src="{% static '/images/single-line-key.png' %}" alt="">
+                <span class="title">{{ title }}</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
