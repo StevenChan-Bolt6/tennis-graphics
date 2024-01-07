@@ -71,31 +71,32 @@
         .outer-container {
             position: fixed;
             bottom: 2%;
-            left: 83%;
-            transform: translate(-50%, -50%);
+            right: 2%;
+            background-image: url(images/single-line-bug-bg.png);
+            background-size: 100% 105%;
+            background-position: 0 -1px;
+            padding: 22px;
+            width: fit-content;
+            white-space: nowrap;
         }
 
         .title {
-            position: absolute;
-            top: 17.5px;
-            left: 50%;
-            width: 400px;
-            transform: translate(-50%, 0%);
+            position: relative;
             color: #fff;
             z-index: 2;
             font-family: 'sharp-sans-regular';
             font-size: 28px;
             text-align: center;
+            display: inline-block;
+            padding-bottom: 7px;
         }
+
 
     </style>
     
     <div class="placeholder">
         <div class="outer-container">
-            <div style="position: relative; z-index: 1;">
-                <img src="images/single-line-bug-bg.png" alt="">
-                <span class="title">GAME TIME: <span class="bold">100 MINUTES</span></span>
-            </div>
+            <span class="title">GAME TIME: <span class="bold">100 MINUTES</span></span>
         </div>
     </div>
 
