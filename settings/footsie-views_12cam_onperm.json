@@ -1,0 +1,308 @@
+{
+  "keyboardShortcuts": [
+    {
+      "name": "reverse",
+      "key": "keypad_enter"
+    }
+  ],
+  "views": [
+    {
+      "name": "Foot Fault Left",
+      "type": "Custom grid",
+      "settings": {
+        "gridCols": 1920,
+        "gridRows": 1080,
+        "tileARNumerator": 1,
+        "tileARDenominator": 1,
+        "tiles": [
+          { "label": "Near (1)", "colStart": 0, "rowStart": 775, "w": 376, "h": 211, "type": "camera", "id": "1", "key": "1"},
+          { "label": "FF Near (12)", "colStart": 1544, "rowStart": 775, "w": 376, "h": 211, "type": "camera", "id": "12", "key": "shift+2"},
+          { "label": "FF Near Oppo (3)", "colStart": 1650, "rowStart": 50, "w": 250, "h": 140, "type": "camera", "id": "3", "key": "3"},
+          { "label": "Output", "colStart": 240, "rowStart": 0, "w": 1360, "h": 765, "type": "output", "streamingOutputNames": ["main-clean"], "defaultPresetName": "MainViewPreset" },
+          { "x": 1280, "y": 780, "w": 200, "h": 200, "type": "presetButton", "presetName": "Right", "key": "ctrl+1" },
+          { "x": 450, "y": 780, "w": 200, "h": 200, "type": "presetButton", "presetName": "Left", "key": "ctrl+2" },
+          { "x": 1060, "y": 780, "w": 200, "h": 200, "type": "savePresetButton", "presetName": "Right", "key": "ctrl+1" },
+          { "x": 670, "y": 780, "w": 200, "h": 200, "type": "savePresetButton", "presetName": "Left", "key": "ctrl+2" },
+          { "x": 20, "y": 50, "w": 200, "h": 200, "type": "actionButton", "label": "FOOT\nFAULT", "actionName": "beep", "key": "ctrl+shift+q"},
+          { "x": 20, "y": 270, "w": 200, "h": 200, "type": "actionButton", "label": "STOP\nSTOP", "actionName": "stopStop", "key": "ctrl+shift+w"},
+          { "x": 20, "y": 490, "w": 200, "h": 200, "type": "actionButton", "label": "CANCEL\nREPLAY", "actionName": "cancelReplay", "key": "ctrl+shift+e"},
+          { "label": "playbackTimeline", "colStart": 0, "rowStart": 1000, "w": 1920, "h": 80, "type": "playbackTimeline" }
+        ]
+      }
+    },
+    {
+      "name": "Foot Fault Right",
+      "type": "Custom grid",
+      "settings": {
+        "gridCols": 1920,
+        "gridRows": 1080,
+        "tileARNumerator": 1,
+        "tileARDenominator": 1,
+        "tiles": [
+          { "label": "Far (6)", "colStart": 0, "rowStart": 775, "w": 376, "h": 211, "type": "camera", "id": "6", "key": "6"},
+          { "label": "FF Far (11)", "colStart": 1544, "rowStart": 775, "w": 376, "h": 211, "type": "camera", "id": "11", "key": "shift+1"},
+          { "label": "FF Far Oppo (4)", "colStart": 1650, "rowStart": 50, "w": 250, "h": 140, "type": "camera", "id": "4", "key": "4"},
+          { "label": "Output", "colStart": 240, "rowStart": 0, "w": 1360, "h": 765, "type": "output", "streamingOutputNames": ["main-clean"], "defaultPresetName": "MainViewPreset" },
+          { "x": 1280, "y": 780, "w": 200, "h": 200, "type": "presetButton", "presetName": "Right", "key": "ctrl+1" },
+          { "x": 450, "y": 780, "w": 200, "h": 200, "type": "presetButton", "presetName": "Left", "key": "ctrl+2" },
+          { "x": 1060, "y": 780, "w": 200, "h": 200, "type": "savePresetButton", "presetName": "Right", "key": "ctrl+1" },
+          { "x": 670, "y": 780, "w": 200, "h": 200, "type": "savePresetButton", "presetName": "Left", "key": "ctrl+2" },
+          { "x": 20, "y": 50, "w": 200, "h": 200, "type": "actionButton", "label": "FOOT\nFAULT", "actionName": "beep", "key": "ctrl+shift+q"},
+          { "x": 20, "y": 270, "w": 200, "h": 200, "type": "actionButton", "label": "STOP\nSTOP", "actionName": "stopStop", "key": "ctrl+shift+w"},
+          { "x": 20, "y": 490, "w": 200, "h": 200, "type": "actionButton", "label": "CANCEL\nREPLAY", "actionName": "cancelReplay", "key": "ctrl+shift+e"},
+          { "label": "playbackTimeline", "colStart": 0, "rowStart": 1000, "w": 1920, "h": 80, "type": "playbackTimeline" }
+        ]
+      }
+    }
+  ],
+  "streamingOutputs": [
+    {
+      "name": "main-clean",
+      "width": 1920,
+      "height": 1080,
+      "url": "rtsp://rtsp-server:8554/clean-1",
+      "decklinkPortStart": 0,
+      "decklinkPortEnd": -1
+    }
+  ],
+  "subViews": [
+    {
+      "name": "mainBackground",
+      "type": "Background Image",
+      "settings": {
+        "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+      }
+    },
+    {
+      "name": "currentBookmarkColourFill",
+      "type": "Current Bookmark Colour Fill",
+      "settings": {}
+    },
+    {
+      "name": "graphicsSequences",
+      "type": "GraphicsSequences",
+      "settings": {
+        "sequences": [
+          { 
+            "label": "Blank", 
+            "key": "g", 
+            "sequence": [] 
+          },
+          { 
+            "label": "reviewingFORDOUBLEBOUNCE", 
+            "key": "q", 
+            "sequence": [ {     
+                "textureName": "reviewingFORDOUBLEBOUNCE",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "doubleBOUNCE", 
+            "key": "a", 
+            "sequence": [ {     
+                "textureName": "doubleBOUNCE",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "noDOUBLEBOUNCE", 
+            "key": "s", 
+            "sequence": [ {     
+                "textureName": "noDOUBLEBOUNCE",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "reviewingFORFOULSHOT", 
+            "key": "w", 
+            "sequence": [ {     
+                "textureName": "reviewingFORFOULSHOT",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "foulSHOT", 
+            "key": "z", 
+            "sequence": [ {     
+                "textureName": "foulSHOT",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "noFOULSHOT", 
+            "key": "x", 
+            "sequence": [ {     
+                "textureName": "noFOULSHOT",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "reviewingFORTOUCH", 
+            "key": "e", 
+            "sequence": [ {     
+                "textureName": "reviewingFORTOUCH",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "touch", 
+            "key": "h", 
+            "sequence": [ {     
+                "textureName": "touch",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "noTOUCH", 
+            "key": "d", 
+            "sequence": [ {     
+                "textureName": "noTOUCH",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "reviewingFORTHROUGH", 
+            "key": "r", 
+            "sequence": [ {     
+                "textureName": "reviewingFORTHROUGH",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "through", 
+            "key": "v", 
+            "sequence": [ {     
+                "textureName": "through",     
+                "onlyShowOn": ["main-clean"]
+            } ]   
+          },
+          { 
+            "label": "noTHROUGH", 
+            "key": "j", 
+            "sequence": [ {     
+                "textureName": "noTHROUGH",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "reviewingFORHINDRANCE", 
+            "key": "t", 
+            "sequence": [ {     
+                "textureName": "reviewingFORHINDRANCE",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "hindrance", 
+            "key": "y", 
+            "sequence": [ {     
+                "textureName": "hindrance",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          },
+          { 
+            "label": "noHINDRANCE",
+            "key": "n", 
+            "sequence": [ {     
+                "textureName": "noHINDRANCE",     
+                "onlyShowOn": ["main-clean"]
+            } ]  
+          }
+        ],
+        "extraGraphics": [],
+        "defaultGraphics": [
+          { 
+            "textureName": "privacyGraphic", 
+            "onlyShowOn": ["main-dirty"] 
+          }
+        ]
+      }
+    }
+  ],
+  "textures": [
+    {
+      "textureName": "privacyGraphic",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "Background_None",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "Background_LeftRightSplit",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "Background_UpDownSplit",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "Background_TriSplit",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "Background_QuadSplit",
+      "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+    },
+    {
+      "textureName": "reviewingFORDOUBLEBOUNCE",
+      "imageFilePath": "/opt/apg/shared/images/reviewingFORDOUBLEBOUNCE.png"
+    },
+    {
+      "textureName": "doubleBOUNCE",
+      "imageFilePath": "/opt/apg/shared/images/doubleBOUNCE.png"
+    },
+    {
+      "textureName": "noDOUBLEBOUNCE",
+      "imageFilePath": "/opt/apg/shared/images/noDOUBLEBOUNCE.png"
+    },
+    {
+      "textureName": "reviewingFORFOULSHOT",
+      "imageFilePath": "/opt/apg/shared/images/reviewingFORFOULSHOT.png"
+    },
+    {
+      "textureName": "foulSHOT",
+      "imageFilePath": "/opt/apg/shared/images/foulSHOT.png"
+    },
+    {
+      "textureName": "noFOULSHOT",
+      "imageFilePath": "/opt/apg/shared/images/noFOULSHOT.png"
+    },
+    {
+      "textureName": "reviewingFORTOUCH",
+      "imageFilePath": "/opt/apg/shared/images/reviewingFORTOUCH.png"
+    },
+    {
+      "textureName": "touch",
+      "imageFilePath": "/opt/apg/shared/images/touch.png"
+    },
+    {
+      "textureName": "noTOUCH",
+      "imageFilePath": "/opt/apg/shared/images/noTOUCH.png"
+    },
+    {
+      "textureName": "reviewingFORTHROUGH",
+      "imageFilePath": "/opt/apg/shared/images/reviewingFORTHROUGH.png"
+    },
+    {
+      "textureName": "through",
+      "imageFilePath": "/opt/apg/shared/images/through.png"
+    },
+    {
+      "textureName": "noTHROUGH",
+      "imageFilePath": "/opt/apg/shared/images/noTHROUGH.png"
+    },
+    {
+      "textureName": "reviewingFORHINDRANCE",
+      "imageFilePath": "/opt/apg/shared/images/reviewingFORHINDRANCE.png"
+    },
+    {
+      "textureName": "hindrance",
+      "imageFilePath": "/opt/apg/shared/images/hindrance.png"
+    },
+    {
+      "textureName": "noHINDRANCE",
+      "imageFilePath": "/opt/apg/shared/images/noHINDRANCE.png"
+    }
+  ]
+}

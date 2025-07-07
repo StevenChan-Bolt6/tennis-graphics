@@ -1,0 +1,656 @@
+{
+    "views": [
+        {
+            "name": "VAR",
+            "type": "Custom grid",
+            "settings": {
+                "tiles": [
+                    {
+                        "h": 90,
+                        "w": 376,
+                        "name": "graphicsSequences",
+                        "type": "subView",
+                        "label": "GraphicsSequences",
+                        "colStart": 772,
+                        "rowStart": 760
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "3",
+                        "key": "3",
+                        "type": "camera",
+                        "label": "3",
+                        "reverse": "shift+1",
+                        "colStart": 1544,
+                        "rowStart": 213
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "5",
+                        "key": "5",
+                        "type": "camera",
+                        "label": "5",
+                        "reverse": "0",
+                        "colStart": 0,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "4",
+                        "key": "4",
+                        "type": "camera",
+                        "label": "4",
+                        "reverse": "shift+1",
+                        "colStart": 1544,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "6",
+                        "key": "6",
+                        "type": "camera",
+                        "label": "6",
+                        "reverse": "0",
+                        "colStart": 0,
+                        "rowStart": 213
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "7",
+                        "key": "7",
+                        "type": "camera",
+                        "label": "7",
+                        "reverse": "2",
+                        "colStart": 386,
+                        "rowStart": 0
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "8",
+                        "key": "8",
+                        "type": "camera",
+                        "label": "8",
+                        "reverse": "1",
+                        "colStart": 772,
+                        "rowStart": 0
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "9",
+                        "key": "9",
+                        "type": "camera",
+                        "label": "9",
+                        "reverse": "shift+2",
+                        "colStart": 386,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "10",
+                        "key": "0",
+                        "type": "camera",
+                        "label": "10",
+                        "reverse": "l",
+                        "colStart": 0,
+                        "rowStart": 426
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "11",
+                        "key": "shift+1",
+                        "type": "camera",
+                        "label": "11",
+                        "reverse": "r",
+                        "colStart": 1544,
+                        "rowStart": 426
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "12",
+                        "key": "shift+2",
+                        "type": "camera",
+                        "label": "12",
+                        "reverse": "5",
+                        "colStart": 1158,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "1",
+                        "key": "1",
+                        "type": "camera",
+                        "label": "1",
+                        "reverse": "8",
+                        "colStart": 772,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "2",
+                        "key": "2",
+                        "type": "camera",
+                        "label": "2",
+                        "reverse": "7",
+                        "colStart": 1158,
+                        "rowStart": 0
+                    },
+                    {
+                        "h": 540,
+                        "w": 960,
+                        "type": "output",
+                        "label": "Output",
+                        "colStart": 484,
+                        "rowStart": 215,
+                        "defaultPresetName": "MainViewPreset",
+                        "streamingOutputNames": [
+                            "main-clean",
+                            "main-dirty"
+                        ]
+                    },
+                    {
+                        "h": 15,
+                        "w": 1920,
+                        "type": "playbackTimeline",
+                        "label": "playbackTimeline",
+                        "colStart": 0,
+                        "rowStart": 1065
+                    }
+                ],
+                "gridCols": 1920,
+                "gridRows": 1080,
+                "tileARNumerator": 1,
+                "tileARDenominator": 1
+            }
+        },
+        {
+            "name": "Foot Fault",
+            "type": "Custom grid",
+            "settings": {
+                "tiles": [
+                    {
+                        "h": 90,
+                        "w": 376,
+                        "name": "graphicsSequences",
+                        "type": "subView",
+                        "label": "GraphicsSequences",
+                        "colStart": 772,
+                        "rowStart": 760
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "3",
+                        "key": "3",
+                        "type": "camera",
+                        "label": "Reverse FF Near (3)",
+                        "reverse": "shift+1",
+                        "colStart": 1544,
+                        "rowStart": 284
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "8",
+                        "key": "8",
+                        "type": "camera",
+                        "label": "Far (8)",
+                        "reverse": "1",
+                        "colStart": 0,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "1",
+                        "key": "1",
+                        "type": "camera",
+                        "label": "Near (1)",
+                        "reverse": "8",
+                        "colStart": 1544,
+                        "rowStart": 852
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "6",
+                        "key": "6",
+                        "type": "camera",
+                        "label": "Reverse FF Far (6)",
+                        "reverse": "0",
+                        "colStart": 0,
+                        "rowStart": 284
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "10",
+                        "key": "0",
+                        "type": "camera",
+                        "label": "FF Far (10)",
+                        "reverse": "l",
+                        "colStart": 0,
+                        "rowStart": 568
+                    },
+                    {
+                        "h": 211,
+                        "w": 376,
+                        "id": "11",
+                        "key": "shift+1",
+                        "type": "camera",
+                        "label": "FF Near (11)",
+                        "reverse": "r",
+                        "colStart": 1544,
+                        "rowStart": 568
+                    },
+                    {
+                        "h": 540,
+                        "w": 960,
+                        "type": "output",
+                        "label": "Output",
+                        "colStart": 484,
+                        "rowStart": 215,
+                        "defaultPresetName": "MainViewPreset",
+                        "streamingOutputNames": [
+                            "main-clean",
+                            "main-dirty"
+                        ]
+                    },
+                    {
+                        "h": 90,
+                        "w": 90,
+                        "x": 1058,
+                        "y": 115,
+                        "key": "ctrl+1",
+                        "type": "presetButton",
+                        "presetName": "Right"
+                    },
+                    {
+                        "h": 90,
+                        "w": 90,
+                        "x": 772,
+                        "y": 115,
+                        "key": "ctrl+2",
+                        "type": "presetButton",
+                        "presetName": "Left"
+                    },
+                    {
+                        "h": 90,
+                        "w": 90,
+                        "x": 772,
+                        "y": 900,
+                        "key": "ctrl+shift+q",
+                        "type": "actionButton",
+                        "label": "FOOT\nFAULT",
+                        "actionName": "beep"
+                    },
+                    {
+                        "h": 90,
+                        "w": 90,
+                        "x": 910,
+                        "y": 900,
+                        "key": "ctrl+shift+w",
+                        "type": "actionButton",
+                        "label": "STOP\nSTOP",
+                        "actionName": "stopStop"
+                    },
+                    {
+                        "h": 90,
+                        "w": 90,
+                        "x": 1058,
+                        "y": 900,
+                        "key": "ctrl+shift+e",
+                        "type": "actionButton",
+                        "label": "CANCEL\nREPLAY",
+                        "actionName": "cancelReplay"
+                    },
+                    {
+                        "h": 15,
+                        "w": 1920,
+                        "type": "playbackTimeline",
+                        "label": "playbackTimeline",
+                        "colStart": 0,
+                        "rowStart": 1065
+                    }
+                ],
+                "gridCols": 1920,
+                "gridRows": 1080,
+                "tileARNumerator": 1,
+                "tileARDenominator": 1
+            }
+        }
+    ],
+    "subViews": [
+        {
+            "name": "mainBackground",
+            "type": "Background Image",
+            "settings": {
+                "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+            }
+        },
+        {
+            "name": "currentBookmarkColourFill",
+            "type": "Current Bookmark Colour Fill",
+            "settings": {}
+        },
+        {
+            "name": "graphicsSequences",
+            "type": "GraphicsSequences",
+            "settings": {
+                "sequences": [
+                    {
+                        "key": "g",
+                        "label": "Blank",
+                        "sequence": []
+                    },
+                    {
+                        "key": "q",
+                        "label": "reviewingFORDOUBLEBOUNCE",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "reviewingFORDOUBLEBOUNCE"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "a",
+                        "label": "doubleBOUNCE",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "doubleBOUNCE"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "s",
+                        "label": "noDOUBLEBOUNCE",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "noDOUBLEBOUNCE"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "w",
+                        "label": "reviewingFORFOULSHOT",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "reviewingFORFOULSHOT"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "z",
+                        "label": "foulSHOT",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "foulSHOT"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "x",
+                        "label": "noFOULSHOT",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "noFOULSHOT"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "e",
+                        "label": "reviewingFORTOUCH",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "reviewingFORTOUCH"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h",
+                        "label": "touch",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "touch"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "d",
+                        "label": "noTOUCH",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "noTOUCH"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "r",
+                        "label": "reviewingFORTHROUGH",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "reviewingFORTHROUGH"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "v",
+                        "label": "through",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "through"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "j",
+                        "label": "noTHROUGH",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "noTHROUGH"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "t",
+                        "label": "reviewingFORHINDRANCE",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "reviewingFORHINDRANCE"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "y",
+                        "label": "hindrance",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "hindrance"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "n",
+                        "label": "noHINDRANCE",
+                        "sequence": [
+                            {
+                                "onlyShowOn": [
+                                    "main-clean"
+                                ],
+                                "textureName": "noHINDRANCE"
+                            }
+                        ]
+                    }
+                ],
+                "extraGraphics": [],
+                "defaultGraphics": [
+                    {
+                        "onlyShowOn": [
+                            "main-dirty"
+                        ],
+                        "textureName": "privacyGraphic"
+                    }
+                ]
+            }
+        }
+    ],
+    "textures": [
+        {
+            "textureName": "privacyGraphic",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_None",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_LeftRightSplit",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_UpDownSplit",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_TriSplit",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_QuadSplit",
+            "imageFilePath": "/opt/apg/shared/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "reviewingFORDOUBLEBOUNCE",
+            "imageFilePath": "/opt/apg/shared/images/reviewingFORDOUBLEBOUNCE.png"
+        },
+        {
+            "textureName": "doubleBOUNCE",
+            "imageFilePath": "/opt/apg/shared/images/doubleBOUNCE.png"
+        },
+        {
+            "textureName": "noDOUBLEBOUNCE",
+            "imageFilePath": "/opt/apg/shared/images/noDOUBLEBOUNCE.png"
+        },
+        {
+            "textureName": "reviewingFORFOULSHOT",
+            "imageFilePath": "/opt/apg/shared/images/reviewingFORFOULSHOT.png"
+        },
+        {
+            "textureName": "foulSHOT",
+            "imageFilePath": "/opt/apg/shared/images/foulSHOT.png"
+        },
+        {
+            "textureName": "noFOULSHOT",
+            "imageFilePath": "/opt/apg/shared/images/noFOULSHOT.png"
+        },
+        {
+            "textureName": "reviewingFORTOUCH",
+            "imageFilePath": "/opt/apg/shared/images/reviewingFORTOUCH.png"
+        },
+        {
+            "textureName": "touch",
+            "imageFilePath": "/opt/apg/shared/images/touch.png"
+        },
+        {
+            "textureName": "noTOUCH",
+            "imageFilePath": "/opt/apg/shared/images/noTOUCH.png"
+        },
+        {
+            "textureName": "reviewingFORTHROUGH",
+            "imageFilePath": "/opt/apg/shared/images/reviewingFORTHROUGH.png"
+        },
+        {
+            "textureName": "through",
+            "imageFilePath": "/opt/apg/shared/images/through.png"
+        },
+        {
+            "textureName": "noTHROUGH",
+            "imageFilePath": "/opt/apg/shared/images/noTHROUGH.png"
+        },
+        {
+            "textureName": "reviewingFORHINDRANCE",
+            "imageFilePath": "/opt/apg/shared/images/reviewingFORHINDRANCE.png"
+        },
+        {
+            "textureName": "hindrance",
+            "imageFilePath": "/opt/apg/shared/images/hindrance.png"
+        },
+        {
+            "textureName": "noHINDRANCE",
+            "imageFilePath": "/opt/apg/shared/images/noHINDRANCE.png"
+        }
+    ],
+    "streamingOutputs": [
+        {
+            "url": "rtsp://rtsp-server:8554/clean-1",
+            "name": "main-clean",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "url": "rtsp://rtsp-server:8554/dirty-1",
+            "name": "main-dirty",
+            "width": 1920,
+            "height": 1080
+        }
+    ],
+    "keyboardShortcuts": [
+        {
+            "key": "keypad_enter",
+            "name": "reverse"
+        }
+    ]
+}
